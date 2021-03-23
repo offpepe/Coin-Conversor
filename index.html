@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma-rtl.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/animation.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Moeda</h1>
+        <h2>Real -> Dolar</h2>
+    </header>
+    <main>
+    <div class="box">
+    <form method="GET">
+        <label for="valor" id="mainLabel">Digite o valor desejado</label><br>
+        <input type="number" placeholder="R$ 1" min="1" max="10" name="valor" id="valor" required><br>
+        <input type="radio" name="moeda" id="dolar" checked>
+        <label for="dolar">Dólar</label>
+        <input type="radio" name="moeda" id="euro">
+        <label for="euro">Euro</label>
+        <input type="radio" name="moeda" id="kwanza">
+        <label for="kwanza">Kwanza</label>
+        <input type="radio" name="moeda" id="yen">
+        <label for="yen">Yen</label><br>
+        <button class="button is-dark is-rounded" id="submit">Converter</button>
+    </form>
+    </div>
+    <h3 id="convertedValue">$ 5,51</h3>
+  
+</main>
+<footer>
+    <h4>Desenvolvido por Alan Albuquerque (aka Offpepe)</h4>
+    <figure>
+    <a href="https://github.com/offpepe" target="_blank"><img src="src/github.png" alt="logo git"></a>
+    <a href="https://www.linkedin.com/in/alan-albuquerque-f-lopes-aa404b206/" target="_blank"><img src="src/linkedin.png" alt="logo linkedin"></a>
+    <a href="https://offpepe.github.io" target="_blank"><img src="src/logo-website-file-globe-icon-svg-wikimedia-commons-21.png" alt="logo website"></a>
+    </figure>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
